@@ -16,8 +16,8 @@ return require('packer').startup(function(use)
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
-		--run = ':TSUpdate'
-		run = function() require("nvim-treesitter.install").update { with_sync = true } end
+		run = ':TSUpdate'
+		--run = function() require("nvim-treesitter.install").update { with_sync = true } end
 	}
 	use "lukas-reineke/lsp-format.nvim"
 
@@ -36,4 +36,5 @@ return require('packer').startup(function(use)
 	use 'saadparwaiz1/cmp_luasnip'
 
 	use "folke/which-key.nvim"
+	use "windwp/nvim-autopairs"
 end)

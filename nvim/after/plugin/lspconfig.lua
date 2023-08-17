@@ -13,3 +13,10 @@ lspconfig.lua_ls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities
 }
+
+lspconfig.angularls.setup {
+	cmd = { "ngserver", "--stdio", "--tsProbeLocations", "", "--ngProbeLocations", "" },
+	filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx" },
+	on_attach = on_attach,
+	capabilities = capabilities
+}
