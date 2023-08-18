@@ -1,18 +1,22 @@
 local opt = vim.opt
 
-opt.number=true
+opt.number = true
 opt.fileencoding = "utf-8"
-opt.syntax="on"
-opt.termguicolors=true
+opt.syntax = "on"
+opt.termguicolors = true
 
-opt.tabstop=2
-opt.shiftwidth=2
+opt.tabstop = 2
+opt.shiftwidth = 2
 
-opt.smartindent=true
-opt.autoindent=true
+opt.smartindent = true
+opt.autoindent = true
 
-opt.mouse="a"
+opt.mouse = "a"
 
-clipboard="unnamedplus"
-opt.signcolumn="yes"
-opt.cursorline=true
+opt.clipboard = "unnamedplus"
+opt.signcolumn = "yes"
+opt.cursorline = true
+
+opt.expandtab = true
+opt.smarttab = true
+opt.showtabline = 2

@@ -1,9 +1,10 @@
-require'nvim-treesitter.configs'.setup {
-	 indent = {
+require 'nvim-treesitter.configs'.setup {
+  indent = {
     enable = true
   },
-	 highlight = {
+  highlight = {
     enable = true
-	},
-ensure_installed = { "lua", "css", "scss", "rust", "tsx", "typescript", "yaml", "json", "http", "html", "java", "javascript", "graphql" }
+  },
+  ensure_installed = { "lua", "css", "scss", "rust", "tsx", "typescript", "yaml", "json", "http", "html",
+    "markdown", "java", "javascript", "graphql" }
 }
