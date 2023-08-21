@@ -42,3 +42,10 @@ lspconfig.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
+lspconfig.jdtls.setup {
+  cmd = { "jdtls", "-configuration", "/home/amon/.cache/jdtls/config", "-data", "/home/amon/.cache/jdtls/workspace" },
+  filetypes = { "java" },
+  on_attach = on_attach,
+  capabilities = capabilities
+}

@@ -43,4 +43,6 @@ return require('packer').startup(function(use)
   use { 'kkharji/lspsaga.nvim' }
 
   use 'onsails/lspkind.nvim'
+
+  use 'mfussenegger/nvim-jdtls'
 end)
