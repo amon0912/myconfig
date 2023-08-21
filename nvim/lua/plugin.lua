@@ -45,4 +45,10 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind.nvim'
 
   use 'mfussenegger/nvim-jdtls'
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
 end)

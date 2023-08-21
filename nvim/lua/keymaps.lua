@@ -3,8 +3,6 @@ vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 keymap("i", "jk", "<ESC>", opts)
@@ -45,3 +43,10 @@ map(0, "n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", { silent = true, nore
 map(0, "n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, noremap = true })
 map(0, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
 map(0, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
+
+
+-- Telescope
+keymap("n", "<Space>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<Space>fg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<Space>fb", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<Space>fh", "<cmd>Telescope help_tags<cr>", opts)
