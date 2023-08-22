@@ -49,3 +49,20 @@ lspconfig.jdtls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
+lspconfig.yamlls.setup {
+  cmd = { "yaml-language-server", "--stdio" },
+  filetypes = { "yaml", "yaml.docker-compose" },
+  settings = {
+    redhat = {
+      telemetry = {
+        enabled = false
+      }
+    },
+    yaml = {
+      schemas = {
+        ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.0-standalone-strict/all.json"] = "/*.k8s.yaml",
+      },
+    },
+  }
+}
