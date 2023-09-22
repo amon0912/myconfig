@@ -6,5 +6,5 @@ require 'nvim-treesitter.configs'.setup {
     enable = true
   },
   ensure_installed = { "lua", "css", "scss", "rust", "tsx", "typescript", "yaml", "json", "http", "html",
-    "markdown", "java", "javascript", "graphql", "xml" }
+    "markdown", "java", "javascript", "graphql", "xml", "svelte" }
 }
