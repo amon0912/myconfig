@@ -1,6 +1,8 @@
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 --vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
+vim.o.autoread = true
+
 local opts = { noremap = true, silent = true }
 
 -- Shorten function name
