@@ -4,6 +4,9 @@ opt.number = true
 opt.fileencoding = "utf-8"
 opt.syntax = "on"
 opt.termguicolors = true
+vim.o.t_Co = 256
+
+opt.wrap = false
 
 opt.tabstop = 2
 opt.shiftwidth = 2
