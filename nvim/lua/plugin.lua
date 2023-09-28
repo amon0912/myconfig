@@ -6,6 +6,9 @@ return require('packer').startup(function(use)
   use 'svrana/neosolarized.nvim'
   use 'nvim-tree/nvim-web-devicons'
 
+
+  use('Tsuzat/NeoSolarized.nvim')
+
   use 'nvim-tree/nvim-tree.lua'
 
   use 'nvim-lualine/lualine.nvim'
@@ -59,4 +62,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
 
   use 'NvChad/nvim-colorizer.lua'
+
+  use "lukas-reineke/indent-blankline.nvim"
 end)
